@@ -1,0 +1,24 @@
+<div class="flex flex-center">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required formControlName="email" />
+      <!-- <span *ngIf="email.invalid && (email.dirty || email.touched)">
+        {{ getEmailError() }}
+      </span> -->
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required formControlName="password" />
+      <!-- <span *ngIf="password.invalid && (password.dirty || password.touched)">
+        A senha é obrigatória e deve ter pelo menos 4 caracteres.
+      </span> -->
+
+      <button [disabled]="form.invalid" type="submit">Login</button>
+    </form>
+    <div class="footer">
+      <p>Don't have an account? <a>Register</a></p>
+    </div>
+  </div>
+
+</div>

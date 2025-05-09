@@ -1,0 +1,56 @@
+@import 'variables.scss';
+
+:host {
+  .login-container {
+    background: $clr-light-a0;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
